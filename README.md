@@ -15,6 +15,6 @@
 
 - `populate_dlc.py` can be run at any time to automatically populate the dlc schema, both 2D and 3D tables.
 
-- `cronjobs` are files to automate when populate_dlc,py, etc runs, you can set to your preferred times.
+- `cronjobs` (crontab.sh being the "master") are files to automate when populate_dlc,py, etc runs, you can set to your preferred times with the cron daemon https://phoenixnap.com/kb/set-up-cron-job-linux
 
 
