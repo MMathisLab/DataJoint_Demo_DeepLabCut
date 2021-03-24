@@ -1,8 +1,8 @@
 """
-schema for deeplabcut
-Mathis Lab 2019
-
-GK 3/28/2019
+DataJoint Schema for DeepLabCut 2.x
+Mathis Lab 2019-2021
+mackenzie.mathis@epfl.ch
+Supports 2D and 3D DLC via triangulation.
 """
 
 # imports
@@ -14,8 +14,7 @@ import pandas as pd
 import numpy as np
 from . import exp
 
-# set constant file paths
-#save_dlc_path = Path('/data/processeddata/deeplabcut1.0_analysed')
+# set constant file paths (edit to where you want data to go):
 save_dlc_path = Path('/data/processeddata/deeplabcut2.0_analysed')
 schema = dj.schema('dlc', locals(), create_tables=True)
 
